@@ -19,7 +19,8 @@ namespace CodeWars {
 
         public static double Index( int[] array, int n ) {
 
-            return (double)( Math.Pow(array[ n ], n ) );
+            if(array.Length > n) { return (double)( Math.Pow( array [ n ],n ) ); }
+            else { return -1; }
     
         }
     }
